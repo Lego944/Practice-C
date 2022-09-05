@@ -14,7 +14,7 @@ if(number<0)
 }
 else if(number > 99)
 {
-    string str = number.ToString();
+    string str = number.ToString();     //Перевод числа в массив взял из интернета
     int[] b = new int[str.Length];
     for( int i=0; i< str.Length; i++)
     {
