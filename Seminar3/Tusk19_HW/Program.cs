@@ -59,7 +59,7 @@ else if (number > 9999 && number < 100000)
             {
                 Console.WriteLine($"Число {number} является палиндромом.");
             }
-             else 
+            else 
             {
                 Console.WriteLine($"Число {number} не является палиндромом.");
             }  
