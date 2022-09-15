@@ -5,12 +5,12 @@
 // 2, 4 -> 16
 
 
-int Degrees(int numberA, int numberB)
+int Degrees(int A, int B)
 {
     int result = 1;
-    for(int i=1; i <= numberB; i++)
+    for(int i=1; i <= B; i++)
     {
-        result = result * numberA;
+        result = result * A;
     }
     return result;
 }
