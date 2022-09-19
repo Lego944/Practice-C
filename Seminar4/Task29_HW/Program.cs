@@ -10,7 +10,7 @@ for (int i = 0; i < 8; i++)
 {
     Console.Write($"Введите элемент № {i+1}: ");
     array[i] = Convert.ToInt32(Console.ReadLine());
-    
+
 }
 
 Console.WriteLine($"Ваш массив из заданных элементов = [{string.Join(", ", array)}]");
