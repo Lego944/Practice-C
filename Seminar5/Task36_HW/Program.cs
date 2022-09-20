@@ -4,10 +4,10 @@
 // [3, 7, 23, 12] -> 19
 // [-4, -6, 89, 6] -> 0
 
-
+// Метод по созданию массива с рандомными значениями.
 int[] GetArray(int size, int leftRange, int rightRange)
 {
-    int[] arr = new int[size];
+    int[] arr = new int[size]; 
     Random rand = new Random();
     for(int i = 0; i < size; i++)
     {
@@ -15,13 +15,14 @@ int[] GetArray(int size, int leftRange, int rightRange)
     }
     return arr;
 }
-
+// Метод по выводу текста пользователю и ввода числа от пользователя.
 int ReadNumber(string message)
 {
     Console.WriteLine(message);
     return Convert.ToInt32(Console.ReadLine());
 }
 
+// Метод по нахождению суммы элементов, стоящих на нечётных позициях.
 int UnEvenSum(int[] arr)
 {
     int sum = 0;
