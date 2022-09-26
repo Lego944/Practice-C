@@ -16,13 +16,24 @@ while (true)
     {
         break;
     }
-    if (numbers != "stop")
+    else
     {
-        int num = Convert.ToInt32(numbers);
-        if (num > 0)
+        int.TryParse(numbers, out int num); // помогает программе не вылетать из-за неправильного введенного значения,
+        if (num > 0)                        // которое вводится с консоли ( Вводится числа и слово stop, вылетает если ввести любые буквы)
         {
             count++;
         }
+    
     }
+    // if (numbers != "stop")
+    // {
+    //     int num = Convert.ToInt32(numbers);
+    //     if (num > 0)
+    //     {
+    //         count++;
+    //     }
+    // }
 }
 Console.WriteLine($"Чисел больше нуля = {count}.");
+
+
