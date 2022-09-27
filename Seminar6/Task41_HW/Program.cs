@@ -11,7 +11,7 @@ Console.WriteLine("Вводите числа через Enter. Чтобы зак
 int count = 0;
 while (true)
 {
-    string numbers = Console.ReadLine();
+    string numbers = Console.ReadLine() ?? " "; // ?? " "; нужно для того чтобы не высвечивалась подсказка про Null(пустая ссылка)
     if (numbers == "stop")
     {
         break;
